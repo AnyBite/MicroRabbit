@@ -7,10 +7,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace MicroRabbit.Banking.Data.Migrations
+namespace MicroRabbit.Transfer.Data.Migrations
 {
-    [DbContext(typeof(BankingDbContext))]
-    partial class BankingDbContextModelSnapshot : ModelSnapshot
+    [DbContext(typeof(TransferDbContext))]
+    partial class TransferDbContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
         {
@@ -21,7 +21,7 @@ namespace MicroRabbit.Banking.Data.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("MicroRabbit.Banking.Domain.Models.Account", b =>
+            modelBuilder.Entity("MicroRabbit.Banking.Domain.Models.TransferLog", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -29,16 +29,18 @@ namespace MicroRabbit.Banking.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("AccountType")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("FromAccount")
+                        .HasColumnType("int");
 
-                    b.Property<decimal>("AccountBalance")
+                    b.Property<int>("ToAccount")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("TransferAmount")
                         .HasColumnType("decimal(18,2)");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Accounts");
+                    b.ToTable("TransferLogs");
                 });
 #pragma warning restore 612, 618
         }

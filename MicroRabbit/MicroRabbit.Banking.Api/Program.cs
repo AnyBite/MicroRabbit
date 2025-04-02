@@ -17,6 +17,9 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<BankingDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("BankingDbConnection")));
 
+builder.Services.AddDbContext<TransferDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("TransferDbConnection")));
+
 
 builder.Services.AddMediatR(cfg =>
     cfg.RegisterServicesFromAssembly(typeof(Program).Assembly));

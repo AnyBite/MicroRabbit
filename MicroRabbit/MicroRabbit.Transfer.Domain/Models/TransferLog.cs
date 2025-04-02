@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace MicroRabbit.Banking.Domain.Models
 {
-    public class Account
+    public class TransferLog
     {
         public int  Id { get; set; }
-        public string AccountType { get; set; }
-        public decimal AccountBalance { get; set; }
+        public int FromAccount { get; set; }
+        public int ToAccount { get; set; }
+        public decimal TransferAmount { get; set; }
     }
 }
