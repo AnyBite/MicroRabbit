@@ -31,6 +31,6 @@ namespace MicroRabbit.Banking.Api.Controllers
         {
             _accountService.Transfer(accountTransfer);
             return Ok(accountTransfer);
-        }
+        } 
     }
 }
