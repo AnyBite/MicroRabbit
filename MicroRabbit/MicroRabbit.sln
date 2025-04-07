@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35913.81 d17.13
+VisualStudioVersion = 17.13.35913.81
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Microservices", "Microservices", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
@@ -55,6 +55,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroRabbit.Transfer.Domain
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroRabbit.Transfer.Data", "MicroRabbit.Transfer.Data\MicroRabbit.Transfer.Data.csproj", "{B5CD94A2-5D1B-4737-8326-C25D6BD9718B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroRabbit.MVC", "MicroRabbit.MVC\MicroRabbit.MVC.csproj", "{B88DD5DE-AC24-47EF-B087-DF729BBC0C19}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +107,10 @@ Global
 		{B5CD94A2-5D1B-4737-8326-C25D6BD9718B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B5CD94A2-5D1B-4737-8326-C25D6BD9718B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B5CD94A2-5D1B-4737-8326-C25D6BD9718B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B88DD5DE-AC24-47EF-B087-DF729BBC0C19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B88DD5DE-AC24-47EF-B087-DF729BBC0C19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B88DD5DE-AC24-47EF-B087-DF729BBC0C19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B88DD5DE-AC24-47EF-B087-DF729BBC0C19}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -131,6 +137,7 @@ Global
 		{1983EDE8-C0C9-42E8-B40B-BE0DFE92047E} = {CE1EFDFC-C79E-471B-BC3E-91837E3AFB18}
 		{2C445A05-119A-4820-8CCD-B41B46AB506F} = {A43C030E-6ECB-4A4C-AFEA-A89442105A31}
 		{B5CD94A2-5D1B-4737-8326-C25D6BD9718B} = {2E52C9B8-3A6B-42B0-BE2B-6BD61D25B7D5}
+		{B88DD5DE-AC24-47EF-B087-DF729BBC0C19} = {693D3E76-51FB-444A-AAFB-25B087BF854E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {94920E52-B033-42EE-9FBA-49E52C91C008}
