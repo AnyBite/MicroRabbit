@@ -7,6 +7,11 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddHttpClient<ITransferService, TransferService>();
 
+builder.Services.Configure<ServiceUrls>(
+    builder.Configuration.GetSection("ServiceUrls")
+);
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
